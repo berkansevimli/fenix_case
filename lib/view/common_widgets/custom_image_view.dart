@@ -81,7 +81,7 @@ class CustomImageView extends StatelessWidget {
                         imageUrl: AssetUtilities.movieSvg,
                         takeDefaultColor: true,
                         isFromAssets: true,
-                        height: getProportionateScreenWidth(64),
+                        height: getProportionateScreenWidth(6),
                         width: getProportionateScreenWidth(64),
                       ),
                     )),

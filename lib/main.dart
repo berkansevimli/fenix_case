@@ -17,7 +17,7 @@ class MyHttpoverrides extends HttpOverrides {
 
 
 Future<void> main() async {
-  HttpOverrides.global = new MyHttpoverrides();
+  HttpOverrides.global = MyHttpoverrides();
   WidgetsFlutterBinding.ensureInitialized();
   setupLocator();
   runApp(const MyApp());

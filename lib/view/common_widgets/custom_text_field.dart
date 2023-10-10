@@ -76,7 +76,7 @@ class CustomTextField extends StatelessWidget {
             color: kBorderColor.withOpacity(0.3),
             spreadRadius: 0,
             blurRadius: 5,
-            offset: Offset(0, 3), // changes position of shadow
+            offset: const Offset(0, 3), // changes position of shadow
           ),
         ],
         color: ColorUtilities.white,
@@ -95,7 +95,7 @@ class CustomTextField extends StatelessWidget {
                   height: 16,
                   width: 16,
                 )
-              : SizedBox(),
+              : const SizedBox(),
           SizedBox(width: icon != null ? 0 : 0),
           Expanded(
             child: Padding(
@@ -121,12 +121,12 @@ class CustomTextField extends StatelessWidget {
                 decoration: InputDecoration(
                   border: InputBorder.none,
                   errorBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.red, width: 0.1),
+                    borderSide: const BorderSide(color: Colors.red, width: 0.1),
                     borderRadius:
                         BorderRadius.circular(getProportionateScreenWidth(15)),
                   ),
                   focusedErrorBorder: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.black, width: 1),
+                    borderSide: const BorderSide(color: Colors.black, width: 1),
                     borderRadius:
                         BorderRadius.circular(getProportionateScreenWidth(15)),
                   ),
@@ -138,7 +138,7 @@ class CustomTextField extends StatelessWidget {
             ),
           ),
           SizedBox(width: suffixIcon != null ? 10 : 0),
-          suffixIcon ?? SizedBox(),
+          suffixIcon ?? const SizedBox(),
         ],
       ),
     );

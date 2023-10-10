@@ -42,7 +42,7 @@ class MovieCard extends StatelessWidget {
                             height: getProportionateScreenHeight(8),
                           ),
                           Text(
-                            e.originalTitle ?? "No Title",
+                            e.originalTitle,
                             maxLines: 3,
                             textAlign: TextAlign.center,
                             overflow: TextOverflow.ellipsis,

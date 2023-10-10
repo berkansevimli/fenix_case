@@ -35,7 +35,7 @@ class HomeViewModel extends BaseViewModel {
     try {
       final response = await api.searchMovie(query);
 
-      if (kDebugMode) print("searchMovie response ${response}");
+      if (kDebugMode) print("searchMovie response $response");
       if (response == null) {
         setErrorMessage('Error has occured with the search Movie');
       } else {

@@ -28,6 +28,7 @@ class CustomSvgView extends StatelessWidget {
             imageUrl!,
             height: height ?? 15,
             width: width ?? 15,
+            // ignore: deprecated_member_use
             color:
                 takeDefaultColor! ? null : svgColor ?? ColorUtilities.text_900,
           )
@@ -35,6 +36,7 @@ class CustomSvgView extends StatelessWidget {
             imageUrl!,
             height: height ?? 15,
             width: width ?? 15,
+            // ignore: deprecated_member_use
             color:
                 takeDefaultColor! ? null : svgColor ?? ColorUtilities.text_900,
           );
